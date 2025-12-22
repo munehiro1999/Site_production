@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" type="text/css" href="../css/base.css" media="all">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
@@ -140,11 +142,11 @@
     </article>
     <article class="service-article fadein mt-3">
       <div class="address-content d-flex justify-content-between bg-black">
-        <div class="address-description text-white p-4">
-          <h3 class="fw-bold fs-4 ms-2">Address</h3><br>
+        <div class="address-description text-white p-0 p-sm-3">
+          <h3 class="fw-bold fs-6 fs-md-1 ms-2 pt-2">Address</h3><br>
           <p>681 xxxx Drive, xxxxx xxxx #01- 06 000000</p><br>
           <p>Opening Hours</p><br>
-          <h3 class="fw-bold fs-4 ms-2">Moudays - Friday: 10am - 9am</h3><br>
+          <h3 class="fw-bold fs-6 fs-md-1 ms-2">Moudays - Friday: 10am - 9am</h3><br>
           <p>Satudays, Sundays & Public Holidays: 9am - 9pm</p><br>
         </div>
         <img src="../img/barista.jpg" class="img-fluid m-md-3" alt="店舗住所イメージ写真">
@@ -174,62 +176,14 @@
   </main>
   <footer>
     <div class="footer-nav d-flex justify-content-center align-items-center gap-3 mt-5" style="height: 100px;">
-      <p>プライパシー</p>
+      <p>プライパシーポリシー</p>
       <p>お問合せ</p>
       <p>運営会社</p>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-  <script>
-    const swiper = new Swiper('.swiper', {
-      direction: 'horizontal',
-      loop: true,
-      speed: 1000,
-      breakpoints: {
-        767: {
-          slidesPerView: 2
-        },
-      },
-      autoplay: {
-        delay: 2000,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-    });
-  </script>
-
-  <script>
-    $(function () {
-      $(".guidance").click(function () {
-        $(this).find(".guidance-list").slideToggle();
-      });
-    });
-
-    $(function () {
-      $(window).scroll(function () {
-        $(".fadein").each(function () {
-          let tagetElement = $(this).offset().top;
-          let scroll = $(window).scrollTop();
-          let windowHeight = $(window).height();
-          if (scroll > tagetElement - windowHeight + 200) {
-            $(this).addClass("scrollin");
-          }
-        });
-      });
-    });
-
-  </script>
+  <script src="../js/swiper.js"></script>
+  <script src="../js/scroll-animation.js"></script>
 </body>
 
 </html>
