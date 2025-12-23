@@ -4,12 +4,12 @@ $(function () {
   });
 });
 
-$(function () {
-  $(window).scroll(function () {
+$(() => {
+  $(window).scroll(() => {
     $(".fadein").each(function () {
-      let tagetElement = $(this).offset().top;
-      let scroll = $(window).scrollTop();
-      let windowHeight = $(window).height();
+      const tagetElement = $(this).offset().top;
+      const scroll = $(window).scrollTop();
+      const windowHeight = $(window).height();
       if (scroll > tagetElement - windowHeight + 200) {
         $(this).addClass("scrollin");
       }

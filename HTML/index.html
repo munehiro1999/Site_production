@@ -16,7 +16,7 @@
 
 <body>
   <header class="header">
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg p-0">
       <div class="container-fluid">
         <a class="navbar-brand fw-bold fs-2" href="#">Casteria</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto me-4 gap-3 mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Food</a>
@@ -47,22 +47,22 @@
     </nav>
   </header>
 
-  <div class="swiper">
+  <div class="swiper" style="height: 350px;">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="../img/interior.jpg" alt="interior.jpg">
+        <img src="../img/interior.jpg" class="py-3 px-5 p-md-0 w-100 h-100" style="object-fit: cover;"  alt="interior.jpg">
       </div>
       <div class="swiper-slide">
-        <img src="../img/restaurant.jpg" alt="restaurant.jpg">
+        <img src="../img/restaurant.jpg" class="py-3 px-5 p-md-0 w-100 h-100" style="object-fit: cover;"  alt="restaurant.jpg">
       </div>
       <div class="swiper-slide">
-        <img src="../img/food.jpg" alt="food.jpg">
+        <img src="../img/food.jpg" class="py-3 px-5 p-md-0 w-100 h-100" style="object-fit: cover;"  alt="food.jpg">
       </div>
       <div class="swiper-slide">
-        <img src="../img/food2.jpg" alt="food2.jpg">
+        <img src="../img/food2.jpg" class="py-3 px-5 p-md-0 w-100 h-100" style="object-fit: cover;"  alt="food2.jpg">
       </div>
       <div class="swiper-slide">
-        <img src="../img/food4.jpg" alt="food4.jpg">
+        <img src="../img/food4.jpg" class="py-3 px-5 p-md-0 w-100 h-100" style="object-fit: cover;"  alt="food4.jpg">
       </div>
     </div>
     <div class="swiper-pagination"></div>
@@ -71,52 +71,52 @@
     <div class="swiper-scrollbar"></div>
   </div>
 
-  <main class="main-content px-5 px-md-4 px-lg-5">
+  <main class="main-content mx-auto px-5 px-md-4 px-lg-5" style="max-width: 1000px;">
     <div>
       <h2 class="fs-2 my-2">新型コロナウイルスに対する取り組みの最新情報をご案内</h2>
     </div>
     <div>
       <div class="guidance">
         <h3 class="guidance-title fs-3 mb-1 p-2">■衛生面に関して</h3>
-        <ul class="guidance-list">
-          <li>・マスクを着用しての接客</li>
-          <li>・出勤前の検温の徹底</li>
-          <li>・レジカウンターやドリンクの受け渡し口等への飛沫防止ガードの設置</li>
-          <li>・より頻度の高い手洗いの励行</li>
-          <li>・テーブルにお客様用の消毒用アルコールの設置</li>
-          <li>・従業員間の距離確保ため、休憩や研修時の客席利用</li>
+        <ul class="guidance-list ms-3">
+          <li class="mb-4">マスクを着用しての接客</li>
+          <li class="mb-4">出勤前の検温の徹底</li>
+          <li class="mb-4">レジカウンターやドリンクの受け渡し口等への飛沫防止ガードの設置</li>
+          <li class="mb-4">より頻度の高い手洗いの励行</li>
+          <li class="mb-4">テーブルにお客様用の消毒用アルコールの設置</li>
+          <li class="mb-4">従業員間の距離確保ため、休憩や研修時の客席利用</li>
         </ul>
       </div>
     </div>
     <div>
       <div class="guidance">
         <h3 class="guidance-title fs-3 mb-1 p-2">■お客様へのご協力のお願い</h3>
-        <ul class="guidance-list">
-          <li>・店内では、飲食以外のマスク着用をお願いいたします</li>
-          <li>・入店時の手首の消毒にご協力ください</li>
-          <li>・レジに並ぶ際、目安を示すフロアステッカーに沿った列間隔の確保にご協力ください</li>
-          <li>・多数でお越しの際は、お一人がまとめてご注文願います（混雑時に入場制限をする場合がございます）</li>
-          <li>・発熱や体調不良の際は入店を控えてください</li>
+        <ul class="guidance-list ms-3">
+          <li class="mb-4">店内では、飲食以外のマスク着用をお願いいたします</li>
+          <li class="mb-4">入店時の手首の消毒にご協力ください</li>
+          <li class="mb-4">レジに並ぶ際、目安を示すフロアステッカーに沿った列間隔の確保にご協力ください</li>
+          <li class="mb-4">多数でお越しの際は、お一人がまとめてご注文願います（混雑時に入場制限をする場合がございます）</li>
+          <li class="mb-4">発熱や体調不良の際は入店を控えてください</li>
         </ul>
       </div>
     </div>
     <div>
       <div class="guidance">
         <h3 class="guidance-title fs-3 mb-1 p-2">■サービスに関して</h3>
-        <ul class="guidance-list">
-          <li>・直接お渡しする商品の提供、金銭授受時にグローブの着用</li>
-          <li>・ドリンクやフードのサンプリング中止</li>
-          <li>・地域活動・イベントの中止</li>
-          <li>・混雑時間帯の客席の譲り合いへのご協力お願いの実施</li>
-          <li>・店内設置しているミルク、はちみつ、パウダー類の一時引き下げ</li>
-          <li>・混雑状況に応じたドライブスルーサービスの一時休止や店内客席利用の制限</li>
+        <ul class="guidance-list ms-3">
+          <li class="mb-4">直接お渡しする商品の提供、金銭授受時にグローブの着用</li>
+          <li class="mb-4">ドリンクやフードのサンプリング中止</li>
+          <li class="mb-4">地域活動・イベントの中止</li>
+          <li class="mb-4">混雑時間帯の客席の譲り合いへのご協力お願いの実施</li>
+          <li class="mb-4">店内設置しているミルク、はちみつ、パウダー類の一時引き下げ</li>
+          <li class="mb-4">混雑状況に応じたドライブスルーサービスの一時休止や店内客席利用の制限</li>
         </ul>
       </div>
     </div>
     <article class="service-article fadein mt-5 p-3">
       <h3 class="service-title fs-4 fw-bold mb-4 ms-2">Signature Food</h3>
-      <div class="service-content d-flex">
-        <img src="../img/food.jpg" class="img-fluid">
+      <div class="service-content d-flex flex-column flex-md-row">
+        <img src="../img/food.jpg" class="img-fluid w-100 w-md-auto" style="max-width: 450px; object-fit: cover;">
         <p class="food-description p-md-4 ms-md-5">
           サーモンは刺身やカルパッチョで食べるのが美味しいですが、リッチな気分になれるサーモンステーキがおすすめです。サーモンの美味しさを引き立てる二種類のソースも絶品です。
         </p>
@@ -124,8 +124,8 @@
     </article>
     <article class="service-article fadein mt-5 p-3">
       <h3 class="service-title fs-4 fw-bold mb-4 ms-2">Oue Coffee</h3>
-      <div class="service-content d-flex">
-        <img src="../img/barista.jpg" class="img-fluid">
+      <div class="service-content d-flex flex-column flex-md-row">
+        <img src="../img/barista.jpg" class="img-fluid w-100 w-md-auto" style="max-width: 450px; object-fit: cover;">
         <p class="food-description p-md-4 ms-md-5">
           当店のコーヒー豆が厳選して世界中から買い付けています。そして、そのコーヒー豆のおいしさを最大限に引き出すために自社のロースタリーで焙煎しています。
         </p>
@@ -133,42 +133,42 @@
     </article>
     <article class="service-article fadein mt-5 p-3">
       <h3 class="service-title fs-4 fw-bold mb-4 ms-2">Our Food</h3>
-      <div class="service-content d-flex">
-        <img src="../img/food3.jpg" class="img-fluid">
+      <div class="service-content d-flex flex-column flex-md-row">
+        <img src="../img/food3.jpg" class="img-fluid w-100 w-md-auto" style="max-width: 450px; object-fit: cover;">
         <p class="food-description p-md-4 ms-md-5">
           当店は何よりもまずは衛生管理に気をつけています。「安全・安心」をお届けするために日々継続的な努力を惜しみません。
         </p>
       </div>
     </article>
-    <article class="service-article fadein mt-3">
-      <div class="address-content d-flex justify-content-between bg-black">
+    <article class="service-article fadein mt-3 p-4 p-md-0">
+      <div class="address-content d-flex flex-column flex-md-row justify-content-md-between bg-black mx-auto">
         <div class="address-description text-white p-0 p-sm-3">
           <h3 class="fw-bold fs-6 fs-md-1 ms-2 pt-2">Address</h3><br>
-          <p>681 xxxx Drive, xxxxx xxxx #01- 06 000000</p><br>
-          <p>Opening Hours</p><br>
+          <p class="description-text" style="font-size: 10px">681 xxxx Drive, xxxxx xxxx #01- 06 000000</p><br>
+          <p class="description-text" style="font-size: 10px">Opening Hours</p><br>
           <h3 class="fw-bold fs-6 fs-md-1 ms-2">Moudays - Friday: 10am - 9am</h3><br>
-          <p>Satudays, Sundays & Public Holidays: 9am - 9pm</p><br>
+          <p class="description-text" style="font-size: 10px">Satudays, Sundays & Public Holidays: 9am - 9pm</p><br>
         </div>
-        <img src="../img/barista.jpg" class="img-fluid m-md-3" alt="店舗住所イメージ写真">
+        <img src="../img/barista.jpg" class="img-fluid  w-md-auto m-md-3" style="width: 400px; object-fit: cover;" alt="店舗住所イメージ写真">
       </div>
     </article>
     <article class="service-article fadein d-none d-md-block mt-3">
       <h3 class="store-title text-center fs-3 mb-4">店舗一覧</h3>
       <div class="store d-flex gap-5">
         <div class="store-list text-center">
-          <img src="../img/restaurant2.jpg" class="store-list-img rounded-circle" alt="店舗一覧写真">
+          <img src="../img/restaurant2.jpg" class="store-list-img rounded-circle" style="width: 180px; height: 180px;" alt="店舗一覧写真">
           <p class="store-address small bi bi-geo-alt-fill ms-1">東京都渋谷区xxxxx xxxxx</p>
         </div>
         <div class="store-list text-center">
-          <img src="../img/restaurant3.jpg" class="store-list-img rounded-circle" alt="店舗一覧写真">
+          <img src="../img/restaurant3.jpg" class="store-list-img rounded-circle" style="width: 180px; height: 180px;" alt="店舗一覧写真">
           <p class="store-address small bi bi-geo-alt-fill">千葉県松戸市xxxxx xxxxx</p>
         </div>
         <div class="store-list text-center">
-          <img src="../img/restaurant4.jpg" class="store-list-img rounded-circle" alt="店舗一覧写真">
+          <img src="../img/restaurant4.jpg" class="store-list-img rounded-circle" style="width: 180px; height: 180px;" alt="店舗一覧写真">
           <p class="store-address small bi bi-geo-alt-fill">神奈川県横浜市xxxxx xxxxx</p>
         </div>
         <div class="store-list text-center">
-          <img src="../img/restaurant5.jpg" class="store-list-img rounded-circle" alt="店舗一覧写真">
+          <img src="../img/restaurant5.jpg" class="store-list-img rounded-circle" style="width: 180px; height: 180px;" alt="店舗一覧写真">
           <p class="store-address small bi bi-geo-alt-fill">埼玉県川越市xxxxx xxxxx</p>
         </div>
       </div>
